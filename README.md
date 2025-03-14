@@ -106,7 +106,7 @@ flow-of-funds/
 ## Screenshots
 | Light Mode | Dark Mode |
 |------------|----------|
-| ![Light Mode](Screenshot 2025-03-14 170217.png) | ![Dark Mode](Screenshot 2025-03-14 170251.png) |
+| ![Light Mode](light.png) | ![Dark Mode](dark.png) |
 
 *(Replace placeholder links with actual screenshots by hosting images on a service like GitHub or Imgur.)*
 
