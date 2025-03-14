@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow of Funds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">Smart Expense Tracker</h1>
+    <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+    <div class="form-container">
+      <h2>Add Expense</h2>
+      <form id="expenseForm" class="form-grid">
+        <input type="text" id="name" placeholder="Expense Name" required>
+        <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+        <select id="category">
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Bills">Bills</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="date" id="date" required>
+        <button type="submit" style="grid-column: span 2;">Add Expense</button>
+      </form>
+    </div>
+    <div class="filter-container">
+      <h2>Filter Expenses</h2>
+      <select id="filterType">
+        <option value="date">Date</option>
+        <option value="category">Category</option>
+        <option value="amount">Amount</option>
+      </select>
+      <button id="sortAsc">Sort Ascending</button>
+      <button id="sortDesc">Sort Descending</button>
+    </div>
+    <div class="insights">
+      <h2>Monthly Insights</h2>
+      <p class="total">Total Spending: <span id="total">₹0.00</span></p>
+      <h3>Daily Spending</h3>
+      <ul class="daily-list" id="dailyList"></ul>
+      <h3>All Expenses</h3>
+      <ul class="expense-list" id="expenseList"></ul>
+      <p class="insight-text" id="insight">Add some expenses to see insights!</p>
+      <button id="deleteAll" class="delete-all-btn">Delete All Expenses</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
