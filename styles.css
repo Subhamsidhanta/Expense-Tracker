@@ -10,7 +10,7 @@
   --shadow: rgba(0, 0, 0, 0.1);
   --input-border: #E8ECEF;
   --button-hover: #1A3C34;
-  --danger: #FF0000;
+  --danger: #f7402f;
 }
 
 [data-theme="dark"] {
